@@ -1,5 +1,6 @@
 :root
-  --baseColor:blue
+  --baseColor:red
+
 
 body
   background-color:var(--baseColor)
