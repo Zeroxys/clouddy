@@ -19,6 +19,27 @@ module.exports = {
       })
     },
 
+    {test: /\.(png|jpeg)/, use: [
+      {
+        loader : 'file-loader',
+        options : {
+          name: '[name].[ext]',
+          outputPath: 'img/'
+        }
+      }
+    ]},
+
+    {test: /\.(svg|eot|wof|ttf)/, use: [
+      {
+        loader : 'url-loader',
+        options : {
+          limit: 10000,
+          name: '[name].[ext]',
+          outputPath: 'fonts/'
+        }
+      }
+    ]},
+
     {test: /\.html/, use: 'html-loader'}
     
   ]
