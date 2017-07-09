@@ -1,3 +1,7 @@
-body{
-  background-color:blue;
+:root {
+  \--baseColor:blue {}
+}
+
+body {
+  background-color:var(--baseColor) {}
 }
