@@ -77,7 +77,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 1 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Syntax Error \n\n(6:7) Unnecessary curly bracket\n\n \u001b[90m 4 | \u001b[39m  --baseColor\u001b[33m:\u001b[39mblue\n \u001b[90m 5 | \u001b[39m=======\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 | \u001b[39m\u001b[33m:\u001b[39mroot\u001b[33m{\u001b[39m\n \u001b[90m   | \u001b[39m      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 | \u001b[39m  --baseColor\u001b[33m:\u001b[39mwhite\u001b[33m;\u001b[39m\n \u001b[90m 8 | \u001b[39m\n\n    at runLoaders (C:\\Users\\Miguel\\Desktop\\Dev\\web\\clouddy\\node_modules\\webpack\\lib\\NormalModule.js:193:19)\n    at C:\\Users\\Miguel\\Desktop\\Dev\\web\\clouddy\\node_modules\\loader-runner\\lib\\LoaderRunner.js:364:11\n    at C:\\Users\\Miguel\\Desktop\\Dev\\web\\clouddy\\node_modules\\loader-runner\\lib\\LoaderRunner.js:230:18\n    at context.callback (C:\\Users\\Miguel\\Desktop\\Dev\\web\\clouddy\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (C:\\Users\\Miguel\\Desktop\\Dev\\web\\clouddy\\node_modules\\postcss-loader\\lib\\index.js:176:44)");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
