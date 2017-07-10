@@ -1,22 +1,6 @@
-<<<<<<< HEAD
-=======
-:root
-<<<<<<< HEAD
-  --baseColor:blue
-<<<<<<< HEAD
-=======
-:root{
-  --baseColor:white;
-
-}
->>>>>>> gabriel
-=======
-  --baseColor:red
-
->>>>>>> 332da67e4dbc0e2636e4e229ab380f9e271f1951
-=======
->>>>>>> gabriel
+@import "fonts.css"
+@import "variables.css"
 
 body
-  background-color:var(--baseColor)
->>>>>>> 1e05f9929b8baa43b7721f51c98cec209826d71d
+  background-color: var(--baseColor)
+  font-family: myText

@@ -29,7 +29,7 @@ module.exports = {
       }
     ]},
 
-    {test: /\.(svg|eot|wof|ttf)/, use: [
+    {test: /\.(svg|eot|wof|ttf|otf)/, use: [
       {
         loader : 'url-loader',
         options : {
