@@ -1,76 +1,79 @@
-Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'file-loader' in '/Users/gabrielgalanmendez/Desktop/clouddy/clouddy':
-  Error: Can't resolve 'file-loader' in '/Users/gabrielgalanmendez/Desktop/clouddy/clouddy'
-  
-  - compiler.js:76 
-    [clouddy]/[html-webpack-plugin]/lib/compiler.js:76:16
-  
-  - Compiler.js:298 Compiler.<anonymous>
-    [clouddy]/[webpack]/lib/Compiler.js:298:10
-  
-  - Compiler.js:516 
-    [clouddy]/[webpack]/lib/Compiler.js:516:13
-  
-  - Tapable.js:138 next
-    [clouddy]/[tapable]/lib/Tapable.js:138:11
-  
-  - CachePlugin.js:62 Compiler.<anonymous>
-    [clouddy]/[webpack]/lib/CachePlugin.js:62:5
-  
-  - Tapable.js:142 Compiler.applyPluginsAsyncSeries
-    [clouddy]/[tapable]/lib/Tapable.js:142:13
-  
-  - Compiler.js:513 
-    [clouddy]/[webpack]/lib/Compiler.js:513:10
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [clouddy]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:653 self.applyPluginsAsync.err
-    [clouddy]/[webpack]/lib/Compilation.js:653:19
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [clouddy]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:644 self.applyPluginsAsync.err
-    [clouddy]/[webpack]/lib/Compilation.js:644:11
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [clouddy]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:639 self.applyPluginsAsync.err
-    [clouddy]/[webpack]/lib/Compilation.js:639:10
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [clouddy]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:635 sealPart2
-    [clouddy]/[webpack]/lib/Compilation.js:635:9
-  
-  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
-    [clouddy]/[tapable]/lib/Tapable.js:131:46
-  
-  - Compilation.js:578 Compilation.seal
-    [clouddy]/[webpack]/lib/Compilation.js:578:8
-  
-  - Compiler.js:510 
-    [clouddy]/[webpack]/lib/Compiler.js:510:16
-  
-  - Tapable.js:225 
-    [clouddy]/[tapable]/lib/Tapable.js:225:11
-  
-  - Compilation.js:480 _addModuleChain
-    [clouddy]/[webpack]/lib/Compilation.js:480:11
-  
-  - Compilation.js:451 processModuleDependencies.err
-    [clouddy]/[webpack]/lib/Compilation.js:451:13
-  
-  - next_tick.js:73 _combinedTickCallback
-    internal/process/next_tick.js:73:7
-  
-  - next_tick.js:104 process._tickCallback
-    internal/process/next_tick.js:104:9
-  
-</pre><script type="text/javascript" src="bundle.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Clouddy</title>
+    </head>
+    <body>
+        <div class="container">
+            <section id="home">
+                <header>
+                    <div class="logo">
+                        <h1>Clouddy</h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#home">Home</a>
+                                <a href="#services">Servicios</a>
+                                <a href="#portfolio">Portafolio</a>
+                                <a href="#contact">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="content">
+                    <div class="idea-clouddy">
+                        <h2>Impulsamos tus ideas a travez de la tecnología</h2>
+                        <p>Generamos ideas creativas y originales que cubran cada una de las necesidades de nuestros clientes, de forma asertiva, rentable y oportuna, llevando el nivel de comunicación a algo más personal con el consumidor final, a través de estrategias digitales.</p>
+                    </div>    
+                </div>
+            </section>
+            <section id="services">
+                <div class"content">
+                    <h3>Servicios</h3>
+                    <div class="card-services">
+                        <img src="img/serv-dev-web.png" alt="">
+                        <h4>Desarrollo web</h4>
+                        <p>Diseño y desarrollo web adaptado al cliente (web coorporativas, negocios online, webs económicas), desarrollo de proyectos web, portales y desarrollos a medida.</p>
+                    </div>
+                    <div class="card-services">
+                        <img src="xxxHTMLLINKxxx0.58393099107724010.25244790584544363xxx" alt="">
+                        <h4>Desarrollo Movil</h4>
+                        <p>Desde la idea hasta la puesta en marcha, desarrollamos apps nativas en iOS y Android para maximizar el rendimiento y conseguir una buena experiencia de usuario.</p>
+                    </div>
+                    <div class="card-services">
+                        <img src="xxxHTMLLINKxxx0.85532324533702250.8852248640138762xxx" alt="">
+                        <h4>Social Media</h4>
+                        <p>Labores tanto de diseño y promoción online (publicidad, posicionamiento, análisis, redes sociales, mailing…).</p>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio">
+                <div class"content">
+                    <h3>Portafolio</h3>
+                </div>
+            </section>
+            <section id="contact">
+                <div class"content">
+                    <h3>Cuentame tu idea</h3>
+                    <form>
+                        <input type="text">
+                        <input type="text">
+                        <input type="text">
+                        <input type="submit">
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div><p><span>Clouddy</span> © 2017 - Todos los derechos reservados.</p></div>
+            </footer>
+        </div>
+    <script type="text/javascript" src="bundle.js"></script></body>
+</html>
