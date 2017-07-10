@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 :root
+<<<<<<< HEAD
   --baseColor:blue
 =======
 :root{
@@ -7,6 +8,10 @@
 
 }
 >>>>>>> gabriel
+=======
+  --baseColor:red
+
+>>>>>>> 332da67e4dbc0e2636e4e229ab380f9e271f1951
 
 body
   background-color:var(--baseColor)

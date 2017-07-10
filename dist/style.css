@@ -1,13 +1,18 @@
 <<<<<<< HEAD
 :root {
-  \--baseColor:blue {}
+  \--baseColor:red {}
 }
+
 
 body {
   background-color:var(--baseColor) {}
+<<<<<<< HEAD
 }
 =======
 body{
   background-color:white;
 }
 >>>>>>> gabriel
+=======
+}
+>>>>>>> 332da67e4dbc0e2636e4e229ab380f9e271f1951
