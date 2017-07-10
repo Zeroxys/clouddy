@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   \--baseColor:blue {}
 }
@@ -5,3 +6,8 @@
 body {
   background-color:var(--baseColor) {}
 }
+=======
+body{
+  background-color:white;
+}
+>>>>>>> gabriel

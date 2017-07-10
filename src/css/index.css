@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 :root
   --baseColor:blue
+=======
+:root{
+  --baseColor:white;
+
+}
+>>>>>>> gabriel
 
 body
   background-color:var(--baseColor)

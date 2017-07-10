@@ -1,12 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <h2>second changes</h2>
-<script type="text/javascript" src="bundle.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'file-loader' in '/Users/gabrielgalanmendez/Desktop/clouddy/clouddy':
+  Error: Can't resolve 'file-loader' in '/Users/gabrielgalanmendez/Desktop/clouddy/clouddy'
+  
+  - compiler.js:76 
+    [clouddy]/[html-webpack-plugin]/lib/compiler.js:76:16
+  
+  - Compiler.js:298 Compiler.<anonymous>
+    [clouddy]/[webpack]/lib/Compiler.js:298:10
+  
+  - Compiler.js:516 
+    [clouddy]/[webpack]/lib/Compiler.js:516:13
+  
+  - Tapable.js:138 next
+    [clouddy]/[tapable]/lib/Tapable.js:138:11
+  
+  - CachePlugin.js:62 Compiler.<anonymous>
+    [clouddy]/[webpack]/lib/CachePlugin.js:62:5
+  
+  - Tapable.js:142 Compiler.applyPluginsAsyncSeries
+    [clouddy]/[tapable]/lib/Tapable.js:142:13
+  
+  - Compiler.js:513 
+    [clouddy]/[webpack]/lib/Compiler.js:513:10
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [clouddy]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:653 self.applyPluginsAsync.err
+    [clouddy]/[webpack]/lib/Compilation.js:653:19
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [clouddy]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:644 self.applyPluginsAsync.err
+    [clouddy]/[webpack]/lib/Compilation.js:644:11
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [clouddy]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:639 self.applyPluginsAsync.err
+    [clouddy]/[webpack]/lib/Compilation.js:639:10
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [clouddy]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:635 sealPart2
+    [clouddy]/[webpack]/lib/Compilation.js:635:9
+  
+  - Tapable.js:131 Compilation.applyPluginsAsyncSeries
+    [clouddy]/[tapable]/lib/Tapable.js:131:46
+  
+  - Compilation.js:578 Compilation.seal
+    [clouddy]/[webpack]/lib/Compilation.js:578:8
+  
+  - Compiler.js:510 
+    [clouddy]/[webpack]/lib/Compiler.js:510:16
+  
+  - Tapable.js:225 
+    [clouddy]/[tapable]/lib/Tapable.js:225:11
+  
+  - Compilation.js:480 _addModuleChain
+    [clouddy]/[webpack]/lib/Compilation.js:480:11
+  
+  - Compilation.js:451 processModuleDependencies.err
+    [clouddy]/[webpack]/lib/Compilation.js:451:13
+  
+  - next_tick.js:73 _combinedTickCallback
+    internal/process/next_tick.js:73:7
+  
+  - next_tick.js:104 process._tickCallback
+    internal/process/next_tick.js:104:9
+  
+</pre><script type="text/javascript" src="bundle.js"></script>
