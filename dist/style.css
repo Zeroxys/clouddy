@@ -1,20 +1,16 @@
-:root {
-  \--baseColor:red {}
+@font-face {
+  font-family: --painter ;
+  src: src("fonts/SingPainter.ttf")
 }
 
 
 body {
-  background-color:var(--baseColor) {}
-<<<<<<< HEAD
+  background-color: blue
 }
-<<<<<<< HEAD
-=======
-body{
-  background-color:white;
+
+
+.logo {
+  h1 {
+    font-family: painter
+  }
 }
->>>>>>> gabriel
-=======
-}
->>>>>>> 332da67e4dbc0e2636e4e229ab380f9e271f1951
-=======
->>>>>>> gabriel
