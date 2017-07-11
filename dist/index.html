@@ -8,81 +8,111 @@
   <link href="style.css" rel="stylesheet"></head>
   <body>
     <div class="container">
-      <section id="home">
+      <main>
+        <section id="home" class="p-l-r">
+          <div class="max-container">
+            <header>
+                <div class="cont-logo">
+                    <h1 class="logo">Clouddy</h1>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li>
+                          <a href="#home">Home</a>
+                          <a href="#services">Servicios</a>
+                          <a href="#portfolio">Portafolio</a>
+                          <a href="#contact">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-        <header>
-            <div class="logo">
-                <h1>Clouddy</h1>
+            <div class="content">
+              <div class="idea-clouddy">
+                <h2>Impulsamos tus ideas a travez de la tecnología</h2>
+                <p>Generamos ideas creativas y originales que cubran cada una de las necesidades de nuestros clientes, de forma asertiva, rentable y oportuna, llevando el nivel de comunicación a algo más personal con el consumidor final, a través de estrategias digitales.</p>
+              </div>  
+              <img class="img-head" src="img/group_7.png" alt="">  
             </div>
-            <nav>
-                <ul>
-                    <li>
-                      <a href="#home">Home</a>
-                      <a href="#services">Servicios</a>
-                      <a href="#portfolio">Portafolio</a>
-                      <a href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="content">
-          <div class="idea-clouddy">
-            <h2>Impulsamos tus ideas a travez de la tecnología</h2>
-            <p>Generamos ideas creativas y originales que cubran cada una de las necesidades de nuestros clientes, de forma asertiva, rentable y oportuna, llevando el nivel de comunicación a algo más personal con el consumidor final, a través de estrategias digitales.</p>
-          </div>    
-        </div>
-
-      </section>
-
-      <section id="services">
-        <div class="content">
-          <h3>Servicios</h3>
-          <div class="card-services">
-            <img src="img/serv-dev-web.png" alt="">
-            <h4>Desarrollo web</h4>
-            <p>Diseño y desarrollo web adaptado al cliente (web coorporativas, negocios online, webs económicas), desarrollo de proyectos web, portales y desarrollos a medida.</p>
           </div>
-          
-          <div class="card-services">
-            <img src="img/serv-dev-movil.png" alt="">
-            <h4>Desarrollo Movil</h4>
-            <p>Desde la idea hasta la puesta en marcha, desarrollamos apps nativas en iOS y Android para maximizar el rendimiento y conseguir una buena experiencia de usuario.</p>
+        </section>
+      </main>
+
+      <section id="services" class="p-l-r">
+        <div class="max-container">
+          <div class="content">
+            <h3>Servicios</h3>
+            <div class="content-colum">
+              <div class="card-services">
+                <img src="img/serv-dev-web.png" alt="">
+                <h4>Desarrollo web</h4>
+                <p>Diseño y desarrollo web adaptado al cliente (web coorporativas, negocios online, webs económicas), desarrollo de proyectos web, portales y desarrollos a medida.</p>
+              </div>
+              
+              <div class="card-services">
+                <img src="img/serv-dev-movil.png" class="movil" alt="">
+                <h4>Desarrollo Movil</h4>
+                <p>Desde la idea hasta la puesta en marcha, desarrollamos apps nativas en iOS y Android para maximizar el rendimiento y conseguir una buena experiencia de usuario.</p>
+              </div>
+
+              <div class="card-services">
+                <img src="img/serv-dev-social.png" alt="">
+                <h4 class="h4-top-media">Social Media</h4>
+                <p>Labores tanto de diseño y promoción online (publicidad, posicionamiento, análisis, redes sociales, mailing…).</p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="card-services">
-            <img src="img/serv-dev-movil.png" alt="">
-            <h4>Social Media</h4>
-            <p>Labores tanto de diseño y promoción online (publicidad, posicionamiento, análisis, redes sociales, mailing…).</p>
+      <section id="portfolio" class="p-l-r">
+        <div class="max-container">
+          <div class="content">
+            <h3>Portafolio</h3>
           </div>
-
         </div>
       </section>
 
-      <section id="portfolio">
-        <div class="content">
-          <h3>Portafolio</h3>
+      <section id="contact" class="p-l-r">
+        <div class="max-container">
+          <div class="content">
+            <h3>Cuentame tu idea</h3>
+            <form>
+              <input type="text" placeholder="Nombre">
+              <input type="text" placeholder="Email">
+              <textarea rows="3" cols="" placeholder="Mi idea es ..."></textarea>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
         </div>
       </section>
 
-      <section id="contact">
-        <div class="content">
-          <h3>Cuentame tu idea</h3>
-          <form>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="submit">
-          </form>
+      <footer id="footer" class="p-l-r">
+        <div class="max-container">
+          <div>
+            <p class="logo">Clouddy</p>
+          </div>
+          <div class="technologies">
+            <img class="react" src="img/react.png" alt="">
+            <img class="angular" src="img/angular.png" alt="">
+            <img class="node" src="img/node.png" alt="">
+            <img class="firebase" src="img/firebase.png" alt="">
+          </div>
+          <div>
+            <h3>Siguenos en</h3>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="#"><img src="img/Google+.png" alt=""></a>
+                <a href="#"><img src="img/Facebook.png" alt=""></a>
+                <a href="#"><img src="img/Twitter.png" alt=""></a>
+                <a href="#"><img src="img/Instagram.png" alt=""></a>
+              </li>
+            </ul>
+          </div>
+          <div class="copy"><p><span class="logo">Clouddy</span> © 2017 - Todos los derechos reservados.</p></div>
         </div>
-      </section>
-
-      <footer>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div><p><span>Clouddy</span> © 2017 - Todos los derechos reservados.</p></div>
       </footer>
     </div> 
   <script type="text/javascript" src="bundle.js"></script></body>
