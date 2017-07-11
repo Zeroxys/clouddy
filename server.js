@@ -6,7 +6,7 @@ const app = new express()
 app.use('/static', express.static('dist'))
 
 app.get('/', (req,res) => {
-  res.status(200).send('Hello world')
+  res.status(200).send('<h1>Testing server</h1>')
 })
 
 app.listen(port, (err) => {
