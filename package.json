@@ -17,6 +17,7 @@
   "author": " <clouddy@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "autoprefixer-stylus": "^0.14.0",
     "browser-sync": "^2.18.12",
     "browser-sync-webpack-plugin": "^1.2.0",
     "clean-webpack-plugin": "^0.1.16",
