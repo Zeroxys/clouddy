@@ -14,8 +14,8 @@ module.exports = {
  module: {
   rules : [
     {
-      test: /\.css/, use: extractTextPlugin.extract({
-        use: ['css-loader', 'postcss-loader']
+      test: /\.css|.styl/, use: extractTextPlugin.extract({
+        use: ['css-loader', 'stylus-loader']
       })
     },
 

@@ -2,5 +2,5 @@
 @import "variables.css"
 
 body
-  background-color: var(--baseColor)
-  font-family: myText
+  background-color var(--baseColor)
+  font-family painter
