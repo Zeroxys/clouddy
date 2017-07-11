@@ -69,15 +69,8 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_index_css__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_index_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__css_index_css__);
+throw new Error("Cannot find module \"../css/index.css\"");
 
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: ModuleBuildError: Module build failed: Syntax Error \n\n(44:5) Unknown word\n\n \u001b[90m 42 | \u001b[39m\n \u001b[90m 43 | \u001b[39m  &-idea \u001b[33m{\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 | \u001b[39m    border 1px solid\n \u001b[90m    | \u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 | \u001b[39m  \u001b[33m}\u001b[39m\n \u001b[90m 46 | \u001b[39m\n\n    at runLoaders (/Users/gabrielgalanmendez/Desktop/clouddy/clouddy/node_modules/webpack/lib/NormalModule.js:193:19)\n    at /Users/gabrielgalanmendez/Desktop/clouddy/clouddy/node_modules/loader-runner/lib/LoaderRunner.js:364:11\n    at /Users/gabrielgalanmendez/Desktop/clouddy/clouddy/node_modules/loader-runner/lib/LoaderRunner.js:230:18\n    at context.callback (/Users/gabrielgalanmendez/Desktop/clouddy/clouddy/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\n    at Promise.resolve.then.then.catch (/Users/gabrielgalanmendez/Desktop/clouddy/clouddy/node_modules/postcss-loader/lib/index.js:176:44)");
 
 /***/ })
 /******/ ]);
