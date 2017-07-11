@@ -1,5 +1,372 @@
-li
-  display flex 
-  align-item center
-  flex-direction column
-  border 1px solid red
+@font-face
+	font-family SignPainter
+	src url(../fonts/SignPainter.ttf)
+
+@font-face
+	font-family SFTextRegular
+	src url(../fonts/SFText-Regular.otf)
+
+@font-face
+	font-family SFRegular
+	src url(../fonts/SFRegular.otf)
+
+@font-face
+	font-family SFDisplaySemibold
+	src url(../fonts/SFDisplay-Semibold.otf)
+
+@font-face
+	font-family SFDisplayRegular
+	src url(../fonts/SanFranciscoDisplay-Regular.otf)
+
+@font-face
+	font-family SFDisplayLight
+	src url(../fonts/SanFranciscoDisplay-Light.otf)
+
+@font-face
+	font-family AvenirNextRegular
+	src url(../fonts/avenir/AvenirNextLTPro-Regular.otf)
+
+@font-face
+	font-family AvenirBook
+	src url(../fonts/avenir/Avenir-Book.ttf)
+
+
+
+blueLogo = #2C6EF0
+blueLink = #0043C7
+blueHoverLink = #0022F6
+blackText = #202020
+blueSkyText = #009EF6
+
+body, h1, h2, h3, h4, h5, p, section, header, footer, img, ul
+	margin: 0
+	padding: 0
+
+.logo 
+	font-family SignPainter
+
+.p-l-r
+	padding-left: 100px
+	padding-right: 100px
+	
+h3
+	font-family: SFDisplayLight
+	font-size: 3em 
+	text-align: center
+
+.max-container
+	max-width: 1280px
+	margin: 0 auto
+
+#home
+	background-image: url("../img/background-1.png")
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 3.7em
+	padding-bottom: 3.7em
+	header 
+		display: flex
+		flex-direction: row 
+		align-items: center 
+		justify-content: space-between
+		margin-bottom: 8em
+		.cont-logo
+			.logo 
+				color blueLogo
+				font-size 72px
+	nav 
+		ul 
+			li 
+				list-style: none
+				a
+					color blueLink
+					text-decoration none
+					padding: 0 30px
+					font-family: SFDisplaySemibold
+					font-size: 1.12em
+					position: relative
+					&:hover
+						color: blueHoverLink
+					&:hover:after
+						position: absolute
+						content: '';
+						border: 1px solid blueHoverLink
+						width: 60%
+						bottom: -4px
+						left: 20%
+	.content 
+		display: flex
+		flex-direction: row 
+		align-items: flex-start 
+		justify-content: space-between
+		.idea-clouddy
+			h2
+				font-family: AvenirNextRegular
+				color: blackText
+				line-height: 50px 
+				font-size: 3.1em
+				margin-bottom: 32px
+			p 
+				font-family: AvenirBook
+				color: blackText
+				font-size: 1.25em
+		.img-head
+			width:  60%
+			height: auto 
+
+#services
+	background-image: url("../img/background-2.png")
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	padding: 9em
+	.content
+		margin-top: 5em
+		h3 
+			color white
+			margin-top: -10px
+		&-colum
+			display: flex
+			flex-direction: row 
+			align-items: flex-start
+			justify-content: space-between
+			.card-services
+				height: 440px
+				background-color: white
+				border-radius: 10px
+				box-shadow: 0 2px 20px 0 rgba(0,0,0,0.21)
+				box-sizing: border-box
+				padding: 0 20px
+				margin-top: 50px
+				text-align: center
+				width: 32.5%
+				img 
+					width: 70%;
+					display: block
+					margin: 20px auto
+					&.movil
+						width: 58.7%
+				h4 
+					font-family: SFDisplayRegular
+					color: blueSkyText
+					font-size: 20px
+					margin-bottom: 20px
+					&.h4-top-media
+						margin-top: 35px
+				p 
+					color: #959595
+					line-height: 28px
+					font-size: 18px
+					font-family: SFTextRegular
+
+#portfolio
+	height: 500px
+	.max-container
+		.content
+			h3
+				color blueLogo
+
+#contact
+	position: relative
+	z-index: 1
+	padding-top 9em
+	padding-bottom: 20em
+	background-image: url("../img/background-3.png")
+	background-position: bottom right
+	background-size: cover
+	background-repeat: no-repeat
+	.max-container
+		.content
+			h3 
+				color white
+			form 
+				text-align: center
+				display: block
+				margin-top: 4em
+				input, textarea 
+					display: block
+					background: rgba(255,255,255,0.26)
+					margin: 18px auto
+					border: 0
+					border-radius: 50px
+					height: 50px
+					width: 480px
+					padding-left: 20px
+					color white
+					font-family: SFDisplayRegular
+					font-size: 1.3em
+					&::placeholder
+						color white
+				textarea
+					height: 120px
+					padding-top: 15px
+				input[type = "submit"]
+					cursor: pointer
+					background: white
+					box-shadow:  0 2px 40px 0 rgba(255,255,255,0.73);
+					border-radius: 50px
+					border: 3px solid #FFFFFF
+					color : #009EF6
+					width: 220px
+
+#footer
+	margin-top: -6em
+	padding-top: 8em
+	background-image: url("../img/background-4.png")
+	background-position: top left
+	background-size: cover
+	background-repeat: no-repeat
+	p.logo 
+		display: block
+		text-align: right
+		color white
+		font-size: 80px 
+	.technologies
+		margin-top: 4em
+		display: flex
+		align-items: center
+		justify-content: space-between
+		img
+			display: block
+			width: 20%
+		.react
+			width: 240px
+		.angular
+			width: 110px
+		.node
+			width: 260px 
+		.firebase
+			width: 110px
+	h3
+		margin-top: 3.5em 
+		color white
+	ul 
+		list-style: none
+		li 
+			text-align: center
+			a
+				padding: 0 10px
+				img 
+					width: 40px 
+	.copy
+		margin-top: 3em
+		padding-bottom: 2em
+		text-align: center
+		p 
+			font-family: AvenirNextRegular
+			color white
+
+
+@media screen and (max-width: 1200px)
+	.img-head
+		width: 50% !important
+	#home 
+		.content 
+			.idea-clouddy 
+				h2
+					font-size: 2.8em !important
+
+@media screen and (max-width: 1025px)
+	.p-l-r
+		padding-left: 15px
+		padding-right: 15px
+	
+	#home 
+		nav 
+			ul 
+				li 
+					a
+						padding: 0 20px
+	
+	#services
+		padding: 1.2em
+	
+	#footer 
+		margin-top: -8em 
+		padding-top: 12em
+		.technologies
+			.react
+				width: 200px
+			.angular
+				width: 90px
+			.node
+				width: 210px 
+			.firebase
+				width: 90px
+		p.logo
+			font-size: 70px
+
+
+
+@media screen and (max-width: 760px)
+
+	.nav-menu
+		display: none
+	
+	.img-head
+		display: none
+
+	#services 
+		padding: 1em
+
+
+
+@media screen and (max-width: 420px)
+
+	.p-l-r
+		padding-left: 20px
+		padding-right: 20px
+	
+	.cont-logo
+		width: 100%
+		.logo
+			display: block
+			text-align: center
+			
+	#services 
+		padding: 1em
+		.content-colum
+			flex-direction: column
+			.card-services
+				width: 100%
+		h3 
+			margin-top: 3em!important
+	
+	#contact 
+		.max-container 
+			.content 
+				form 
+					input, textarea 
+						width 90%
+	
+	#footer 
+		margin-top: -20em
+		padding-top: 20em
+		background-position: center
+		.technologies
+			display: block
+			img 
+				display: block
+				margin: 2em auto
+			.react
+				width: 200px
+			.angular
+				width: 70px
+			.node
+				width: 220px 
+			.firebase
+				width: 70px
+		p.logo 
+			text-align: center 
+			
+					 
+
+
+			
+
+
+
+	
+		
+
