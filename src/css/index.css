@@ -1,6 +1,0 @@
-@import "fonts.css"
-@import "variables.css"
-
-body
-  background-color var(--baseColor)
-  font-family painter
