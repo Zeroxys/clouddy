@@ -357,6 +357,9 @@ h3 {
   #services {
     padding: 1.2em;
   }
+  #services .content h3 {
+    margin-top: 0;
+  }
   #footer {
     margin-top: -8em;
     padding-top: 12em;
@@ -378,6 +381,10 @@ h3 {
   }
 }
 @media screen and (max-width: 760px) {
+  .p-l-r {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   .nav-menu {
     display: none;
   }
@@ -385,8 +392,42 @@ h3 {
     display: none;
   }
   #services {
-    padding: 1em;
+    padding: 3em;
   }
+  #services .content-colum {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #services .content-colum .card-services {
+    width: 80%;
+  }
+}
+.list-social {
+  margin-top: 15px;
+}
+#footer {
+  margin-top: -8em;
+  padding-top: 12em;
+}
+#footer .technologies .react {
+  width: 150px;
+}
+#footer .technologies .angular {
+  width: 60px;
+}
+#footer .technologies .node {
+  width: 150px;
+}
+#footer .technologies .firebase {
+  width: 60px;
+}
+#footer p.logo {
+  font-size: 60px;
 }
 @media screen and (max-width: 420px) {
   .p-l-r {
@@ -398,7 +439,6 @@ h3 {
   }
   .cont-logo .logo {
     display: block;
-    text-align: center;
   }
   #services {
     padding: 1em;
@@ -432,18 +472,15 @@ h3 {
     margin: 2em auto;
   }
   #footer .technologies .react {
-    width: 200px;
+    width: 180px;
   }
   #footer .technologies .angular {
     width: 70px;
   }
   #footer .technologies .node {
-    width: 220px;
+    width: 180px;
   }
   #footer .technologies .firebase {
-    width: 70px;
-  }
-  #footer p.logo {
-    text-align: center;
+    width: 60px;
   }
 }
