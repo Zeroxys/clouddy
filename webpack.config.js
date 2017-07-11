@@ -3,6 +3,7 @@ const browserSyncPlugin = require('browser-sync-webpack-plugin')
 const cleanPlugin = require('clean-webpack-plugin')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const extractTextPlugin = require('extract-text-webpack-plugin')
+const prefixers = require('autoprefixer-stylus')
 
 module.exports = {
  entry : './src/js/index.js',
@@ -15,7 +16,14 @@ module.exports = {
   rules : [
     {
       test: /\.css|.styl/, use: extractTextPlugin.extract({
-        use: ['css-loader', 'stylus-loader']
+        use: [
+          'css-loader',{
+             loader : 'stylus-loader',
+             options : {
+               use: [prefixers()]
+             }
+           }
+           ]
       })
     },
 
