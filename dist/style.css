@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @font-face{
   font-family : painter; 
@@ -27,3 +28,16 @@ body{
   font-family: 'painter';
   color: #FFFFFF;
 }
+=======
+@font-face
+  font-family : myText
+  src: url("../fonts/SanFranciscoDisplay-Regular.otf")
+
+@font-face
+  font-family : painter
+  src: url("../fonts/SignPainter-HouseScript.ttf"):root
+  --baseColor: bluebody {
+  background-color: var(--baseColor);
+  font-family: painter;
+}
+>>>>>>> 4edad3c2ef44fa94f48833411657c0c53732272f
