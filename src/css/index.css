@@ -1,15 +1,47 @@
-:root 
-  --baseColor : blue
-  --painter : painter
 
+@font-face{
+  font-family : painter; 
+  src: url("../fonts/SignPainter.ttf");
+}
 
-@font-face
-  font-family: --painter 
-  src: src("fonts/SingPainter.ttf")
+@font-face{
+  font-family : SFRegular; 
+  src: url("../fonts/SFRegular.otf");
+}
 
-body
-  background-color: var(--baseColor)
+@font-face{
+  font-family : SFText-Regular;
+  src: url("../fonts/SFText-Regular.otf");
+}
 
-.logo
-  h1 
-    font-family: var(--painter)
+@font-face{
+  font-family : SFDisplay-Semibold;
+  src: url("../fonts/SFDisplay-Semibold.otf");
+}
+
+:root{ 
+  --baseColor : white;
+  --logoColorBlue : #2C6EF0; 
+  --logoColorWhite : #FFFFFF; 
+  --linksColorBlue : #0043C7;
+  --textColorBlack : #202020;
+  --textColorBlueSky : #009EF6; 
+  --textColorGray : #959595;
+  --textColorBlue : #1E77E1;
+}
+
+body{
+  background-color: var(--baseColor);
+}
+.logo h1{
+  font-family: 'painter';
+  color: var(--logoColorWhite);
+}
+
+.content{
+
+  &-idea {
+    border 1px solid
+  }
+
+}

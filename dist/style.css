@@ -1,16 +1,29 @@
-@font-face {
-  font-family: --painter ;
-  src: src("fonts/SingPainter.ttf")
+
+@font-face{
+  font-family : painter; 
+  src: url(fonts/SignPainter.ttf);
 }
 
-
-body {
-  background-color: blue
+@font-face{
+  font-family : SFRegular; 
+  src: url(fonts/SFRegular.otf);
 }
 
+@font-face{
+  font-family : SFText-Regular;
+  src: url(fonts/SFText-Regular.otf);
+}
 
-.logo {
-  h1 {
-    font-family: painter
-  }
+@font-face{
+  font-family : SFDisplay-Semibold;
+  src: url(fonts/SFDisplay-Semibold.otf);
+}
+
+body{
+  background-color: white;
+}
+
+.logo h1{
+  font-family: 'painter';
+  color: #FFFFFF;
 }
