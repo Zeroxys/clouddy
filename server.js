@@ -3,10 +3,12 @@ const port = process.env.PORT || 8080
 
 const app = new express()
 
-app.use('/static', express.static('dist'))
+// app.use(express.static('./dist/fonts'))
+// app.use(express.static('./dist/img'))
+app.use(express.static('dist'))
 
 app.get('/', (req,res) => {
-  res.status(200).send('<h1>Testing server</h1>')
+  res.status(200).sendfile('./dist/index.html')
 })
 
 app.listen(port, (err) => {
