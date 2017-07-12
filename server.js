@@ -3,8 +3,7 @@ const port = process.env.PORT || 8080
 
 const app = new express()
 
-// app.use(express.static('./dist/fonts'))
-// app.use(express.static('./dist/img'))
+//app.set('port', (process.env.PORT || 80))
 app.use(express.static('dist'))
 
 app.get('/', (req,res) => {
