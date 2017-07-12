@@ -29,9 +29,10 @@ $(function() {
             if (target.length) {
                 nvMovil.hide()
                 $('#menu-toggle-wrapper').removeClass('active').css({
-                    'position' : 'absolute',
+                    'position' : 'relative !important',
                     'top' : '0',
-                    'right' : '10px'
+                    'right' : '10px',
+                    'background-color': 'red'
                 });
                 $('html,body').animate({
                     scrollTop: target.offset().top
