@@ -4,6 +4,7 @@ const cleanPlugin = require('clean-webpack-plugin')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const extractTextPlugin = require('extract-text-webpack-plugin')
 const prefixers = require('autoprefixer-stylus')
+const webpack = require('webpack')
 
 module.exports = {
  entry : './src/js/index.js',
@@ -59,6 +60,11 @@ module.exports = {
       port: 3000,
       server: { baseDir : ['dist'] },
       open:false
+    }),
+
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      JQuery: 'jquery'
     }),
 
     new extractTextPlugin('style.css'),
