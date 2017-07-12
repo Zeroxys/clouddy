@@ -33,7 +33,6 @@
 	src url(../fonts/avenir/Avenir-Book.ttf)
 
 
-
 blueLogo = #2C6EF0
 blueLink = #0043C7
 blueHoverLink = #0022F6
@@ -43,6 +42,39 @@ blueSkyText = #009EF6
 body, h1, h2, h3, h4, h5, p, section, header, footer, img, ul
 	margin: 0
 	padding: 0
+
+.active-item{   
+  color: blue
+}
+
+.nav-movil{
+  display: none
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: #009EF6
+  z-index: 99
+}
+.nav-movil ul{
+  height: 100%
+} 
+.nav-movil ul li{ 
+  height: 100%
+  list-style: none
+  display: flex
+  flex-direction: column
+  text-align: center
+  margin-top: 40%
+}
+.nav-movil ul li a{ 
+  display: block
+  text-decoration: none
+  padding: 5% 0
+  color: white
+  font-family: SFDisplaySemibold
+  font-size: 2em
+}
+
 
 .logo 
 	font-family SignPainter
@@ -59,6 +91,7 @@ h3
 .max-container
 	max-width: 1280px
 	margin: 0 auto
+
 
 #home
 	background-image: url("../img/background-1.png")
@@ -82,14 +115,14 @@ h3
 		ul 
 			li 
 				list-style: none
-				a
+				a 
 					color blueLink
 					text-decoration none
 					padding: 0 30px
 					font-family: SFDisplaySemibold
 					font-size: 1.12em
 					position: relative
-					&:hover
+					&:hover, 
 						color: blueHoverLink
 					&:hover:after
 						position: absolute
@@ -97,7 +130,7 @@ h3
 						border: 1px solid blueHoverLink
 						width: 60%
 						bottom: -4px
-						left: 20%
+						left: 20% 
 	.content 
 		display: flex
 		flex-direction: row 
@@ -306,13 +339,14 @@ h3
 
 
 @media screen and (max-width: 760px)
-
 	.p-l-r
 		padding-left: 60px
 		padding-right: 60px
 
 	.nav-menu
 		display: none
+	#menu-toggle-wrapper
+		display: block
 	
 	.img-head
 		display: none
@@ -355,7 +389,7 @@ h3
 
 
 @media screen and (max-width: 420px)
-
+ 
 	.p-l-r
 		padding-left: 20px
 		padding-right: 20px

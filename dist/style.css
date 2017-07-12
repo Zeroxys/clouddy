@@ -1,11 +1,11 @@
 #menu-toggle-wrapper {
+  display: none;
   position: absolute;
   top: 0;
   right: 10px;
   width: 70px;
   height: 70px;
-  z-index: 11;
-  display: block;
+  z-index: 999;
 }
 #menu-toggle-wrapper #menu-toggle {
   position: absolute;
@@ -14,13 +14,14 @@
   font-size: 30px;
   display: block;
   margin-left: -15px;
-  width: 30px;
-  height: 3px;
+  width: 35px;
+  height: 4px;
+  background: #4078c0;
 }
-#menu-toggle-wrapper #menu-toggle background #4078c0:before {
+#menu-toggle-wrapper #menu-toggle:before {
   top: -8px;
 }
-#menu-toggle-wrapper #menu-toggle background #4078c0:after {
+#menu-toggle-wrapper #menu-toggle:after {
   bottom: -8px;
 }
 #menu-toggle-wrapper.active #menu-toggle {
@@ -45,7 +46,7 @@
   content: '';
   position: absolute;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background: #4078c0;
   left: 0;
   -webkit-transform-origin: center center;
@@ -112,6 +113,41 @@ ul {
   margin: 0;
   padding: 0;
 }
+.active-item {
+  color: #00f;
+}
+.nav-movil {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #009ef6;
+  z-index: 99;
+}
+.nav-movil ul {
+  height: 100%;
+}
+.nav-movil ul li {
+  height: 100%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 40%;
+}
+.nav-movil ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 5% 0;
+  color: #fff;
+  font-family: SFDisplaySemibold;
+  font-size: 2em;
+}
 .logo {
   font-family: SignPainter;
 }
@@ -168,9 +204,8 @@ h3 {
   font-size: 1.12em;
   position: relative;
 }
-#home nav ul li a:hover {
-  color: #0022f6;
-}
+#home nav ul li a:hover,
+#home nav ul li a color: blueHoverLink,
 #home nav ul li a:hover:after {
   position: absolute;
   content: '';
@@ -455,6 +490,9 @@ h3 {
   }
   .nav-menu {
     display: none;
+  }
+  #menu-toggle-wrapper {
+    display: block;
   }
   .img-head {
     display: none;

@@ -1,11 +1,11 @@
 #menu-toggle-wrapper
+  display none
   position absolute
   top 0
   right: 10px
   width 70px
   height 70px
-  z-index 11
-  display block
+  z-index 999
   #menu-toggle
     position absolute
     top 50%
@@ -13,13 +13,13 @@
     font-size 30px
     display block
     margin-left -15px
-    width 30px
-    height 3px
+    width 35px
+    height 4px
     background #4078c0
-      &:before
-        top -8px
-      &:after
-        bottom -8px
+    &:before
+      top -8px
+    &:after
+      bottom -8px
   &.active
     #menu-toggle
       background 0 0
@@ -47,7 +47,7 @@
   content ''
   position absolute
   width 100%
-  height 3px
+  height 4px
   background #4078c0
   left 0
   -webkit-transform-origin center center
@@ -72,3 +72,4 @@
 #menu-toggle-wrapper.active:focus #menu-toggle:before,
 #menu-toggle-wrapper.active:hover #menu-toggle:before
   top -8px
+
