@@ -1,3 +1,5 @@
+@import "menu.styl"
+
 @font-face
 	font-family SignPainter
 	src url(../fonts/SignPainter.ttf)
@@ -66,6 +68,7 @@ h3
 	padding-top: 3.7em
 	padding-bottom: 3.7em
 	header 
+		position: relative
 		display: flex
 		flex-direction: row 
 		align-items: center 
@@ -322,23 +325,30 @@ h3
 			.card-services
 				width: 80%
 
-.list-social
-	margin-top: 15px
+	.list-social
+		margin-top: 15px
 
-#footer 
-		margin-top: -8em 
-		padding-top: 12em
-		.technologies
-			.react
-				width: 150px
-			.angular
-				width: 60px
-			.node
-				width: 150px 
-			.firebase
-				width: 60px
-		p.logo
-			font-size: 60px
+	#contact 
+		.max-container 
+			.content 
+				form 
+					input, textarea 
+						width 90%
+
+	#footer 
+			margin-top: -8em 
+			padding-top: 12em
+			.technologies
+				.react
+					width: 150px
+				.angular
+					width: 60px
+				.node
+					width: 150px 
+				.firebase
+					width: 60px
+			p.logo
+				font-size: 60px
 
 
 
