@@ -60,6 +60,15 @@ h3
 	max-width: 1280px
 	margin: 0 auto
 
+.nav-movil
+  display: none
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: #009EF6
+  z-index: 99
+
+
 #home
 	background-image: url("../img/background-1.png")
 	background-position: center
@@ -82,14 +91,14 @@ h3
 		ul 
 			li 
 				list-style: none
-				a
+				a 
 					color blueLink
 					text-decoration none
 					padding: 0 30px
 					font-family: SFDisplaySemibold
 					font-size: 1.12em
 					position: relative
-					&:hover
+					&:hover, 
 						color: blueHoverLink
 					&:hover:after
 						position: absolute
@@ -97,7 +106,7 @@ h3
 						border: 1px solid blueHoverLink
 						width: 60%
 						bottom: -4px
-						left: 20%
+						left: 20% 
 	.content 
 		display: flex
 		flex-direction: row 
@@ -306,13 +315,14 @@ h3
 
 
 @media screen and (max-width: 760px)
-
 	.p-l-r
 		padding-left: 60px
 		padding-right: 60px
 
 	.nav-menu
 		display: none
+	#menu-toggle-wrapper
+		display: block
 	
 	.img-head
 		display: none
@@ -355,7 +365,7 @@ h3
 
 
 @media screen and (max-width: 420px)
-
+ 
 	.p-l-r
 		padding-left: 20px
 		padding-right: 20px

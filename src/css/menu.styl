@@ -1,11 +1,11 @@
 #menu-toggle-wrapper
+  display none
   position absolute
   top 0
   right: 10px
   width 70px
   height 70px
-  z-index 11
-  display block
+  z-index 999
   #menu-toggle
     position absolute
     top 50%
@@ -16,10 +16,10 @@
     width 30px
     height 3px
     background #4078c0
-      &:before
-        top -8px
-      &:after
-        bottom -8px
+    &:before
+      top -8px
+    &:after
+      bottom -8px
   &.active
     #menu-toggle
       background 0 0
@@ -72,3 +72,4 @@
 #menu-toggle-wrapper.active:focus #menu-toggle:before,
 #menu-toggle-wrapper.active:hover #menu-toggle:before
   top -8px
+
