@@ -38,14 +38,12 @@ blueLink = #0043C7
 blueHoverLink = #0022F6
 blackText = #202020
 blueSkyText = #009EF6
+scrollNav = rgba(26, 206, 234, 0.8)
 
 body, h1, h2, h3, h4, h5, p, section, header, footer, img, ul
 	margin: 0
 	padding: 0
 
-.active-item{   
-  color: blue
-}
 
 .nav-movil{
   display: none
@@ -98,39 +96,8 @@ h3
 	background-position: center
 	background-size: cover
 	background-repeat: no-repeat
-	padding-top: 3.7em
+	padding-top: 14em
 	padding-bottom: 3.7em
-	header 
-		position: relative
-		display: flex
-		flex-direction: row 
-		align-items: center 
-		justify-content: space-between
-		margin-bottom: 8em
-		.cont-logo
-			.logo 
-				color blueLogo
-				font-size 72px
-	nav 
-		ul 
-			li 
-				list-style: none
-				a 
-					color blueLink
-					text-decoration none
-					padding: 0 30px
-					font-family: SFDisplaySemibold
-					font-size: 1.12em
-					position: relative
-					&:hover, 
-						color: blueHoverLink
-					&:hover:after
-						position: absolute
-						content: '';
-						border: 1px solid blueHoverLink
-						width: 60%
-						bottom: -4px
-						left: 20% 
 	.content 
 		display: flex
 		flex-direction: row 
@@ -150,6 +117,56 @@ h3
 		.img-head
 			width:  60%
 			height: auto 
+
+nav.nav-menu
+	position: absolute
+	right: 0
+	ul 
+		li 
+			list-style: none
+			a
+				color: blueLink;
+				text-decoration: none
+				padding: 0 30px
+				font-family: SFDisplaySemibold
+				font-size: 1.12em
+				position: relative
+				&:hover, &.active-item 
+					color: blueHoverLink
+				&:hover:after, &.active-item:after 
+					position: absolute
+					content: '';
+					border: 1px solid blueHoverLink
+					width: 60%
+					bottom: -4px
+					left: 20%
+				 
+
+.container-header
+	position: fixed
+	width: 100%
+	left: 0
+	top: 2.5em
+	z-index: 999
+	header 
+		position: relative
+		margin: 0 auto
+		display: flex
+		flex-direction: row 
+		align-items: center 
+		justify-content: space-between
+		width: 100%
+		max-width: 1240px
+		.cont-logo
+			.logo 
+				color blueLogo
+				font-size 72px
+		&:after
+			clear: both
+			content: ""
+			display: block
+
+
 
 #services
 	background-image: url("../img/background-2.png")

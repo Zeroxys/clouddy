@@ -26,23 +26,38 @@ $(function() {
 
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+
             if (target.length) {
                 nvMovil.hide()
+
                 $('#menu-toggle-wrapper').removeClass('active').css({
                     'position' : 'relative !important',
                     'top' : '0',
-                    'right' : '10px',
-                    'background-color': 'red'
-                });
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000, function(){
-                    return false;
-                });
+                    'right' : '10px'
+                }, callbackSyle());
+
+                if(target[0].id == 'services'){
+
+                  $('html,body').animate({
+                        scrollTop: target.offset().top + 160
+                    }, 1000, function(){
+                        return false;
+                    });  
+                }else{
+                     $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function(){
+                        return false;
+                    }); 
+                }
                 return false;
             }
         }
     });
+    function callbackSyle(){
+        
+    }
 });
 
 
