@@ -121,9 +121,8 @@ ul {
   background-color: #009ef6;
   z-index: 99;
 }
-.nav-movil ul {
-  height: 100%;
-}
+.nav-movil ul,
+height: 100%,
 .nav-movil ul li {
   height: 100%;
   list-style: none;
@@ -160,6 +159,21 @@ h3 {
 .max-container {
   max-width: 1280px;
   margin: 0 auto;
+}
+.scroll-logo {
+  font-size: 40px !important;
+  color: #fff !important;
+}
+.scroll-container-header {
+  background-color: rgba(26,206,234,0.8) !important;
+  position: fixed !important;
+  top: 0 !important;
+}
+.scroll-header {
+  height: 70px !important;
+}
+.scroll-link {
+  color: #fff !important;
 }
 #home {
   background-image: url(img/background-1.png);
@@ -229,7 +243,7 @@ nav.nav-menu ul li a.active-item:after {
   left: 20%;
 }
 .container-header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   top: 2.5em;

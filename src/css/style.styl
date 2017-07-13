@@ -45,33 +45,34 @@ body, h1, h2, h3, h4, h5, p, section, header, footer, img, ul
 	padding: 0
 
 
-.nav-movil{
-  display: none
-  position: fixed
-  width: 100%
-  height: 100%
-  background-color: #009EF6
-  z-index: 99
-}
-.nav-movil ul{
-  height: 100%
-} 
-.nav-movil ul li{ 
-  height: 100%
-  list-style: none
-  display: flex
-  flex-direction: column
-  text-align: center
-  margin-top: 40%
-}
-.nav-movil ul li a{ 
-  display: block
-  text-decoration: none
-  padding: 5% 0
-  color: white
-  font-family: SFDisplaySemibold
-  font-size: 2em
-}
+.nav-movil
+		display: none
+		position: fixed
+		width: 100%
+		height: 100%
+		background-color: #009EF6
+		z-index: 99
+
+.nav-movil ul
+  	height: 100%
+
+.nav-movil ul li
+		height: 100%
+		list-style: none
+		display: flex
+		flex-direction: column
+		text-align: center
+		margin-top: 40%
+
+
+.nav-movil ul li a
+		display: block
+		text-decoration: none
+		padding: 5% 0
+		color: white
+		font-family: SFDisplaySemibold
+		font-size: 2em
+
 
 
 .logo 
@@ -89,6 +90,23 @@ h3
 .max-container
 	max-width: 1280px
 	margin: 0 auto
+
+
+
+.scroll-logo
+		font-size: 40px!important
+		color: white!important
+
+.scroll-container-header
+	background-color: rgba(26, 206, 234, 0.8)!important
+	position: fixed!important
+	top: 0!important
+
+.scroll-header
+	height: 70px!important
+
+.scroll-link
+	color: white!important
 
 
 #home
@@ -143,7 +161,7 @@ nav.nav-menu
 				 
 
 .container-header
-	position: fixed
+	position: absolute
 	width: 100%
 	left: 0
 	top: 2.5em
