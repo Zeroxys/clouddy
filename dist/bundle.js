@@ -75,6 +75,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 $(function() {
 
+
     var alto = $( window ).height();
     var nvMovil = $('.nav-movil');
     var contHeader = $('container-header');

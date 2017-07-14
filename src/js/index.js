@@ -2,6 +2,7 @@ import '../css/style.styl'
 
 $(function() {
 
+
     var alto = $( window ).height();
     var nvMovil = $('.nav-movil');
     var contHeader = $('container-header');
