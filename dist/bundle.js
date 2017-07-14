@@ -84,12 +84,14 @@ $(function() {
     $('#menu-toggle-wrapper').click(function(){
         $(this).toggleClass('active');
         if($(this).hasClass('active')){
+            $('body').css('overflow','hidden')
             $('#head-logo').css('color','white')
             nvMovil.css({
                 'height': alto,
                 'display': 'block'
             })
         }else{
+            $('body').css('overflow','auto')
             $('#head-logo').css('color','#2c6ef0')
             $('.nav-movil').css('display', 'none')
         }
@@ -110,6 +112,7 @@ $(function() {
 
                 //movil
                 nvMovil.hide()
+                $('body').css('overflow','auto')
 
                 $('#menu-toggle-wrapper').removeClass('active');
 
