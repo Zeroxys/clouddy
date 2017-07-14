@@ -11,16 +11,13 @@ $(function() {
     $('#menu-toggle-wrapper').click(function(){
         $(this).toggleClass('active');
         if($(this).hasClass('active')){
-            $(this).css({
-                'position': 'fixed',
-                'top':'60px',
-                'right': '30px',
-            })
+            $('#head-logo').css('color','white')
             nvMovil.css({
                 'height': alto,
                 'display': 'block'
             })
         }else{
+            $('#head-logo').css('color','#2c6ef0')
             $('.nav-movil').css('display', 'none')
         }
     });
@@ -41,11 +38,7 @@ $(function() {
                 //movil
                 nvMovil.hide()
 
-                $('#menu-toggle-wrapper').removeClass('active').css({
-                    'position' : 'relative !important',
-                    'top' : '0',
-                    'right' : '10px'
-                }, callbackSyle());
+                $('#menu-toggle-wrapper').removeClass('active');
 
                 //desk
                 if(!$(this).hasClass('active-item')){
@@ -58,6 +51,8 @@ $(function() {
                 idSection == 'services'? scrollToContent(100):scrollToContent(0)
 
                 function scrollToContent(m){
+                    m==0?$('#head-logo').css('color','#2c6ef0'): $('#head-logo').css('color','white')
+
                     $('html,body').animate({
                         scrollTop: target.offset().top + m
                     }, 1000);  
@@ -67,27 +62,46 @@ $(function() {
             }
         }
     });
-    function callbackSyle(){
-        
-    }
-    
+
+    var home = $('#home');
+    var services = $('#services');
+    var portfolio = $('#portfolio');
+    var contact = $('#contact');
+
+    var navA = $('.nav-menu').find('a')
+    var scrollTopWindow
 
     $(window).scroll(function(){
-        var scrollTopWindow = $(this).scrollTop();
+        scrollTopWindow = $(this).scrollTop();
         
-        if(scrollTopWindow > $('#services').offset().top){
-            console.log('mayor')
+        if(scrollTopWindow < services.offset().top){
+            navA.removeClass('active-item');
+            $("[href='#home']").addClass("active-item");  
+        }
+
+        if(scrollTopWindow > services.offset().top && scrollTopWindow < portfolio.offset().top-100){
+            navA.removeClass('active-item');
+            $("[href='#services']").addClass("active-item");  
+        }
+
+        if(scrollTopWindow > portfolio.offset().top-10 && scrollTopWindow < contact.offset().top){
+            navA.removeClass('active-item');
+            $("[href='#portfolio']").addClass("active-item");  
+        }
+        if(scrollTopWindow > contact.offset().top-10){
+            navA.removeClass('active-item');
+            $("[href='#contact']").addClass("active-item");  
         }
 
 
         if(scrollTopWindow > 40){
-          
 
             $('.cont-logo .logo').addClass('scroll-logo');
             $('.container-header').addClass('scroll-container-header');
 
             $('.container-header header').addClass('scroll-header').find('a').addClass('scroll-link');
         }else{
+            $('#head-logo').css('color','#2c6ef0')
             $('.cont-logo .logo').removeClass('scroll-logo');
             $('.container-header').removeClass('scroll-container-header');
 
