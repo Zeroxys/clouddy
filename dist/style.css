@@ -165,9 +165,13 @@ h3 {
 .scroll-logo {
   font-size: 2em !important;
   color: #fff !important;
+  -webkit-transition: color 1s, font-size 1s;
+  transition: color 1s, font-size 1s;
 }
 .scroll-container-header {
-  background-color: rgba(26,206,234,0.8) !important;
+  background: rgba(26,206,234,0.8) !important;
+  -webkit-transition: background 1s;
+  transition: background 1s;
   position: fixed !important;
   top: 0 !important;
 }
@@ -176,6 +180,8 @@ h3 {
 }
 .scroll-link {
   color: #fff !important;
+  -webkit-transition: color 1s;
+  transition: color 1s;
   top: 0 !important;
 }
 .a-logo {
@@ -229,6 +235,8 @@ nav.nav-menu ul li {
 }
 nav.nav-menu ul li a {
   color: #0043c7;
+  -webkit-transition: color 1s;
+  transition: color 1s;
   text-decoration: none;
   padding: 0 30px;
   font-family: SFDisplaySemibold;
@@ -254,6 +262,8 @@ nav.nav-menu ul li a.active-item:after {
   left: 0;
   top: 2.5em;
   z-index: 999;
+  -webkit-transition: background 1s;
+  transition: background 1s;
 }
 .container-header header {
   position: relative;
@@ -281,6 +291,8 @@ nav.nav-menu ul li a.active-item:after {
 .container-header header .cont-logo .logo {
   color: #2c6ef0;
   font-size: 4.5em;
+  -webkit-transition: color 1s, font-size 1s;
+  transition: color 1s, font-size 1s;
 }
 .container-header header:after {
   clear: both;
