@@ -262,8 +262,6 @@ nav.nav-menu ul li a.active-item:after {
   left: 0;
   top: 2.5em;
   z-index: 999;
-  -webkit-transition: background 1s;
-  transition: background 1s;
 }
 .container-header header {
   position: relative;
