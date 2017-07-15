@@ -1,3 +1,76 @@
-.404
-  background-color: red
-  border: 10px solid black
+bgColor = #69d9f1
+macbookBorder = #b3b3b3
+
+html
+  height: 100%
+  width: 100%
+
+.notFound
+  background-color: bgColor
+  margin: 0
+  padding: 0
+  min-height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-direction: column
+  font-family: SFDisplayRegular
+
+.sorry
+  color rgba(242,242,242,0.8)
+  font-size: 2em
+
+.backButton
+  color: rgb(242, 242, 242)
+  text-transform: uppercase
+  border:2px solid rgb(242,242,242)
+  text-decoration: none
+  font-size: 1.2em
+  letter-spacing: 4px
+  font-family: verdana
+  display: flex
+  justify-content: center
+  align-items center
+  flex: 0 0 60px
+  width: 150px
+  transition: 1s
+
+.backButton:hover
+  background-color: rgba(0,0,0,0.2)  
+
+
+.ghost 
+  animation: float 3s ease-out infinite;
+
+@keyframes float 
+  50% 
+     transform: translate(0, 20px);
+  
+
+.shadowFrame 
+  width: 130px;
+  margin-top: 15px;
+
+.shadow 
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+  ellipse 
+    transform-origin: center center;
+  
+
+
+@keyframes shrink 
+  0% 
+    width: 90%;
+    margin: 0 5%;
+  
+  50% 
+    width: 60%;
+    margin: 0 18%;
+  
+  100% 
+    width: 90%;
+    margin: 0 5%;

@@ -198,6 +198,38 @@ button.toast-close-button {
     width: 25em;
   }
 }
+@font-face {
+  font-family: SignPainter;
+  src: url(fonts/SignPainter.ttf);
+}
+@font-face {
+  font-family: SFTextRegular;
+  src: url(fonts/SFText-Regular.otf);
+}
+@font-face {
+  font-family: SFRegular;
+  src: url(fonts/SFRegular.otf);
+}
+@font-face {
+  font-family: SFDisplaySemibold;
+  src: url(fonts/SFDisplay-Semibold.otf);
+}
+@font-face {
+  font-family: SFDisplayRegular;
+  src: url(fonts/SanFranciscoDisplay-Regular.otf);
+}
+@font-face {
+  font-family: SFDisplayLight;
+  src: url(fonts/SanFranciscoDisplay-Light.otf);
+}
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url(fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+  font-family: AvenirBook;
+  src: url(fonts/Avenir-Book.ttf);
+}
 #menu-toggle-wrapper {
   display: none;
   position: absolute;
@@ -266,41 +298,122 @@ button.toast-close-button {
 #menu-toggle-wrapper.active:hover #menu-toggle:before {
   top: -8px;
 }
-.404 {
-  background-color: #f00;
-  border: 10px solid #000;
+html {
+  height: 100%;
+  width: 100%;
 }
-@font-face {
-  font-family: SignPainter;
-  src: url(fonts/SignPainter.ttf);
-}
-@font-face {
-  font-family: SFTextRegular;
-  src: url(fonts/SFText-Regular.otf);
-}
-@font-face {
-  font-family: SFRegular;
-  src: url(fonts/SFRegular.otf);
-}
-@font-face {
-  font-family: SFDisplaySemibold;
-  src: url(fonts/SFDisplay-Semibold.otf);
-}
-@font-face {
+.notFound {
+  background-color: #69d9f1;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: SFDisplayRegular;
-  src: url(fonts/SanFranciscoDisplay-Regular.otf);
 }
-@font-face {
-  font-family: SFDisplayLight;
-  src: url(fonts/SanFranciscoDisplay-Light.otf);
+.sorry {
+  color: rgba(242,242,242,0.8);
+  font-size: 2em;
 }
-@font-face {
-  font-family: AvenirNextRegular;
-  src: url(fonts/AvenirNextLTPro-Regular.otf);
+.backButton {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  border: 2px solid #f2f2f2;
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 4px;
+  font-family: verdana;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+  width: 150px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
-@font-face {
-  font-family: AvenirBook;
-  src: url(fonts/Avenir-Book.ttf);
+.backButton:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+.ghost {
+  -webkit-animation: float 3s ease-out infinite;
+          animation: float 3s ease-out infinite;
+}
+.shadowFrame {
+  width: 130px;
+  margin-top: 15px;
+}
+.shadow {
+  -webkit-animation: shrink 3s ease-out infinite;
+          animation: shrink 3s ease-out infinite;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+.shadow ellipse {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+@-webkit-keyframes float {
+  50% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+}
+@keyframes float {
+  50% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+}
+@-webkit-keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
 }
 body,
 h1,
@@ -327,8 +440,9 @@ ul {
   background-color: #009ef6;
   z-index: 99;
 }
-.nav-movil ul,
-height: 100%,
+.nav-movil ul {
+  height: 100%;
+}
 .nav-movil ul li {
   height: 100%;
   list-style: none;

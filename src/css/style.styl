@@ -1,83 +1,52 @@
+@import "fonts.styl"
+@import "variables.styl"
 @import "menu.styl"
 @import "404.styl"
 @import '../../node_modules/toastr/build/toastr.css';
 
-@font-face
-	font-family SignPainter
-	src url(../fonts/SignPainter.ttf)
-
-@font-face
-	font-family SFTextRegular
-	src url(../fonts/SFText-Regular.otf)
-
-@font-face
-	font-family SFRegular
-	src url(../fonts/SFRegular.otf)
-
-@font-face
-	font-family SFDisplaySemibold
-	src url(../fonts/SFDisplay-Semibold.otf)
-
-@font-face
-	font-family SFDisplayRegular
-	src url(../fonts/SanFranciscoDisplay-Regular.otf)
-
-@font-face
-	font-family SFDisplayLight
-	src url(../fonts/SanFranciscoDisplay-Light.otf)
-
-@font-face
-	font-family AvenirNextRegular
-	src url(../fonts/avenir/AvenirNextLTPro-Regular.otf)
-
-@font-face
-	font-family AvenirBook
-	src url(../fonts/avenir/Avenir-Book.ttf)
-
-
-blueLogo = #2C6EF0
-blueLink = #0043C7
-blueHoverLink = #0022F6
-blackText = #202020
-blueSkyText = #009EF6
-scrollNav = rgba(26, 206, 234, 0.8)
-
-body, h1, h2, h3, h4, h5, p, section, header, footer, img, ul
-	margin: 0
-	padding: 0
-
+body, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+p, 
+section, 
+header, 
+footer, 
+img, 
+ul
+ 	margin: 0
+ 	padding: 0
 
 .nav-movil
-		display: none
-		position: fixed
-		text-align: center
-		padding-top: 50%
-		width: 100%
-		height: 100%
-		background-color: #009EF6
-		z-index: 99
+	display: none
+	position: fixed 	
+	text-align: center
+	padding-top: 50%
+	width: 100%
+	height: 100%
+	background-color: #009EF6
+	z-index: 99
 
 .nav-movil ul
-  	height: 100%
+  height: 100%
 
 .nav-movil ul li
-		height: 100%
-		list-style: none
-		display: flex
-		flex-direction: column
-		text-align: center
-		margin-top: 40%
-
+	height: 100%
+	list-style: none
+	display: flex
+	flex-direction: column
+	text-align: center
+	margin-top: 40%
 
 .nav-movil ul li a
-		display: block
-		text-decoration: none
-		padding: 5% 0
-		color: white
-		font-family: SFDisplaySemibold
-		font-size: 2em
-
-
+	display: block
+	text-decoration: none
+	padding: 5% 0
+	color: white
+	font-family: SFDisplaySemibold
+	font-size: 2em
 
 .logo 
 	font-family SignPainter
@@ -94,8 +63,6 @@ h3
 .max-container
 	max-width: 1280px
 	margin: 0 auto
-
-
 
 .scroll-logo
 	font-size: 2em!important
@@ -171,7 +138,6 @@ nav.nav-menu
 					bottom: -4px
 					left: 20%
 				 
-
 .container-header
 	position: absolute
 	width: 100%
@@ -199,8 +165,6 @@ nav.nav-menu
 			clear: both
 			content: ""
 			display: block
-
-
 
 #services
 	background-image: url("../img/background-2.png")
@@ -345,7 +309,6 @@ nav.nav-menu
 			font-family: AvenirNextRegular
 			color white
 
-
 @media screen and (max-width: 1200px)
 	.img-head
 		width: 50% !important
@@ -400,8 +363,6 @@ nav.nav-menu
 		p.logo
 			font-size: 70px
 
-
-
 @media screen and (max-width: 760px)
 	#home 
 		padding-top: 10em
@@ -450,10 +411,6 @@ nav.nav-menu
 					width: 60px
 			p.logo
 				font-size: 3.75em
-
-
-
-
 
 @media screen and (max-width: 420px)
 
@@ -517,15 +474,3 @@ nav.nav-menu
 				width: 180px 
 			.firebase
 				width: 60px
-	
-			
-					 
-
-
-			
-
-
-
-	
-		
-
