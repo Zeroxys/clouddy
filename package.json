@@ -35,6 +35,8 @@
   "dependencies": {
     "express": "^4.15.3",
     "jquery": "^3.2.1",
-    "stylus": "^0.54.5"
+    "jquery-validation": "^1.16.0",
+    "stylus": "^0.54.5",
+    "toastr": "^2.1.2"
   }
 }

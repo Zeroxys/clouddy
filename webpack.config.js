@@ -38,6 +38,19 @@ module.exports = {
       }
     ]},
 
+    { 
+      test: /\.html/, use: 
+      [
+        {
+          loader : 'file-loader',
+          options : {
+            name : '[name].[ext]'
+          }
+        }
+      ],
+      exclude : path.resolve(__dirname, './src/index.html')
+    },
+
     {test: /\.(svg|eot|wof|ttf|otf)/, use: [
       {
         loader : 'url-loader',
@@ -49,7 +62,16 @@ module.exports = {
       }
     ]},
 
-    {test: /\.html/, use: 'html-loader'}
+    {test: /\.html/, use: 
+      [
+        {
+          loader : 'html-loader',
+          options : {
+            name : '[name].[ext]'
+          }
+        }
+      ],
+    }
     
   ]
  },
