@@ -415,6 +415,9 @@ html {
     margin: 0 5%;
   }
 }
+.toast-bottom-center {
+  font-family: SFDisplayRegular;
+}
 body,
 h1,
 h2,
@@ -434,7 +437,6 @@ ul {
   display: none;
   position: fixed;
   text-align: center;
-  padding-top: 50%;
   width: 100%;
   height: 100%;
   background-color: #009ef6;
