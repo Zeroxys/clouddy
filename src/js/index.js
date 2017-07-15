@@ -1,9 +1,9 @@
 import '../css/style.styl'
-// import '../googlec54e055a9da49684.html'
-//import '../404.html'
+import '../googlec54e055a9da49684.html'
+import '../404.html'
 
 $(function() {
-
+    
 
     var alto = $( window ).height();
     var nvMovil = $('.nav-movil');

@@ -8,7 +8,6 @@ const webpack = require('webpack')
 
 module.exports = {
  entry : './src/js/index.js',
-
  output : {
    filename: 'bundle.js',
    path : path.resolve(__dirname, 'dist')
@@ -39,8 +38,8 @@ module.exports = {
       }
     ]},
 
-    {
-      test : /\.html$/, use: 
+    { 
+      test: /\.html/, use: 
       [
         {
           loader : 'file-loader',
@@ -49,7 +48,7 @@ module.exports = {
           }
         }
       ],
-      exclude: path.resolve(__dirname, '/src/index.html')
+      exclude : path.resolve(__dirname, './src/index.html')
     },
 
     {test: /\.(svg|eot|wof|ttf|otf)/, use: [
@@ -63,7 +62,16 @@ module.exports = {
       }
     ]},
 
-    // {test: /\.html/, use: 'html-loader'}
+    {test: /\.html/, use: 
+      [
+        {
+          loader : 'html-loader',
+          options : {
+            name : '[name].[ext]'
+          }
+        }
+      ],
+    }
     
   ]
  },
@@ -76,16 +84,15 @@ module.exports = {
       open:false
     }),
 
-    new htmlWebpackPlugin({
-      filename: 'index.html',
-      template : './src/index.html'
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      JQuery: 'jquery'
     }),
 
     new extractTextPlugin('style.css'),
 
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      JQuery: 'jquery'
+    new htmlWebpackPlugin({
+      template : './src/index.html'
     }),
 
     new cleanPlugin(['dist'])
