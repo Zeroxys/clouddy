@@ -66,6 +66,10 @@
 #menu-toggle-wrapper.active:hover #menu-toggle:before {
   top: -8px;
 }
+.404 {
+  background-color: #f00;
+  border: 10px solid #000;
+}
 @font-face {
   font-family: SignPainter;
   src: url(fonts/SignPainter.ttf);

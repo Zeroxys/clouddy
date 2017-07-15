@@ -63,18 +63,25 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_style_styl__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__css_style_styl___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__css_style_styl__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__googlec54e055a9da49684_html__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__googlec54e055a9da49684_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__googlec54e055a9da49684_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__404_html__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__404_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__404_html__);
+
+
 
 
 $(function() {
-
+    
 
     var alto = $( window ).height();
     var nvMovil = $('.nav-movil');
@@ -212,7 +219,8 @@ function(){
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 1 */
+
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10472,10 +10480,26 @@ return jQuery;
 
 
 /***/ }),
-/* 2 */
+
+/***/ 16:
+/***/ (function(module, exports) {
+
+module.exports = "google-site-verification: googlec54e055a9da49684.html";
+
+/***/ }),
+
+/***/ 17:
+/***/ (function(module, exports) {
+
+module.exports = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n  <title>Document</title>\n</head>\n<body>\n  <div class=\"404\">\n    <h1>asdsadsa</h1>\n  </div>\n</body>\n</html>";
+
+/***/ }),
+
+/***/ 2:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
-/******/ ]);
+
+/******/ });
