@@ -8,6 +8,7 @@
       <meta name="description" itemprop="description" content="Empresa de Tecnología encargada de desarrollo de páginas web, aplicaciones web y aplicaciones móviles.">
       <meta name="keywords" content="Clouddy, Desarrollo, Páginas, Web, Empresa, Aplicaciones, Móviles, Villahermosa, Tabasco">
       <meta name="google-site-verification" content="wzRUjMAVxIYQM3vBzJ8gcwADFBl5mPX268POZocGFJI" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
   </head>
   <body>
     <div class="container">
@@ -94,12 +95,15 @@
         <div class="max-container">
           <div class="content">
             <h3>Cuentame tu idea</h3>
+
             <form id="form" method="post" action="">
-              <input type="text" placeholder="Nombre">
-              <input type="text" placeholder="Email">
-              <textarea rows="3" placeholder="Mi idea es ..."></textarea>
+              <p id="errorGeneral"></p>
+              <input type="text" placeholder="Nombre" name="name" id="name" autocomplete="off">
+              <input type="email" placeholder="Email" name="email" autocomplete="off">
+              <textarea rows="3" placeholder="Mi idea es ..." name="context" id="context" autocomplete="off"></textarea>
               <input type="submit" value="Enviar">
             </form>
+
           </div>
         </div>
       </section>
@@ -141,9 +145,6 @@
       ga('create', 'UA-102559620-1', 'auto');
       ga('send', 'pageview');
 
-      </script> 
-      <script>
-      $("#form").validate();
-      </script>
+    </script> 
   </body>
 </html>
