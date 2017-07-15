@@ -94,7 +94,7 @@
         <div class="max-container">
           <div class="content">
             <h3>Cuentame tu idea</h3>
-            <form>
+            <form id="form" method="post" action="">
               <input type="text" placeholder="Nombre">
               <input type="text" placeholder="Email">
               <textarea rows="3" placeholder="Mi idea es ..."></textarea>
@@ -141,6 +141,9 @@
       ga('create', 'UA-102559620-1', 'auto');
       ga('send', 'pageview');
 
-    </script> 
+      </script> 
+      <script>
+      $("#form").validate();
+      </script>
   <script type="text/javascript" src="bundle.js"></script></body>
 </html>
