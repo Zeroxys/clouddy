@@ -416,7 +416,8 @@ html {
   }
 }
 .toast-bottom-center {
-  font-family: SFDisplayRegular;
+  font-family: AvenirNextRegular;
+  letter-spacing: 0.5px;
 }
 body,
 h1,
@@ -795,6 +796,7 @@ nav.nav-menu ul li a.active-item:after {
 }
 #footer ul {
   list-style: none;
+  margin-top: 10px;
 }
 #footer ul li {
   text-align: center;
@@ -803,7 +805,15 @@ nav.nav-menu ul li a.active-item:after {
   padding: 0 10px;
 }
 #footer ul li a img {
-  width: 40px;
+  width: 35px;
+}
+#footer ul li a img:hover {
+  -webkit-transform: rotate(380deg);
+          transform: rotate(380deg);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
 }
 #footer .copy {
   margin-top: 3em;
