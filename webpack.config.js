@@ -83,7 +83,6 @@ module.exports = {
     new extractTextPlugin('style.css'),
 
     new htmlWebpackPlugin({
-      favicon : './src/favicon/filename.png',
       template : './src/index.html'
     }),
 
