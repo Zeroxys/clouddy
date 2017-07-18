@@ -718,6 +718,7 @@ nav.nav-menu ul li a.active-item:after {
   color: #fff;
   font-family: SFDisplayRegular;
   font-size: 1.3em;
+  outline: none;
 }
 #contact .max-container .content form input::-webkit-input-placeholder,
 #contact .max-container .content form textarea::-webkit-input-placeholder {
@@ -734,6 +735,8 @@ nav.nav-menu ul li a.active-item:after {
 #contact .max-container .content form textarea {
   height: 120px;
   padding-top: 15px;
+  resize: none;
+  outline: none;
 }
 #contact .max-container .content form input[type = "submit"] {
   cursor: pointer;

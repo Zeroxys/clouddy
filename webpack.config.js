@@ -38,7 +38,13 @@ module.exports = {
       }
     ]},
 
-    {test : /\.html/, use:['html-loader']},
+    {test : /\.html/, use:
+      [
+        {
+          loader : 'html-loader'
+        }
+      ]
+    },
 
     { 
       test: /\.html/, use: 
