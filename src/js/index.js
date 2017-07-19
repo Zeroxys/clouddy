@@ -50,13 +50,13 @@ $(function() {
                 obj.push(val.value)
            });
             //objeto que enviamos 
-          console.log(obj)
+        //   console.log(obj)
 
-          axios.post('http://localhost:8181/api/person', obj).then( (response) => {
-            console.log(response)
-          }).catch((err) => {
-            console.log(`err : ${err}`)
-          })
+        //   axios.post('http://localhost:8181/api/person', obj).then( (response) => {
+        //     console.log(response)
+        //   }).catch((err) => {
+        //     console.log(`err : ${err}`)
+        //   })
     
             Toastr.success('Su mensaje ha sido enviado' );
         },
