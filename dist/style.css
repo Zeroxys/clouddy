@@ -415,6 +415,10 @@ html {
     margin: 0 5%;
   }
 }
+.toast-bottom-center {
+  font-family: AvenirNextRegular;
+  letter-spacing: 0.5px;
+}
 body,
 h1,
 h2,
