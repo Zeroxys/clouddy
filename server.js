@@ -13,11 +13,9 @@ app.use(bodyParser.urlencoded({ extended : false }))
 app.use(bodyParser.json())
 app.use(compression())
 
-
 // set routes
 app.post('/form', (req, res, next) => {
-  res.status(200).send({message: 'ok'})
-  console.log(req.body)
+  console.log(`its ok : ${req.body}`)
 })
 
 app.listen(port, err => {

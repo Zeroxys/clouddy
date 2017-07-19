@@ -10394,6 +10394,12 @@ $(function() {
            });
             //objeto que enviamos 
           console.log(obj)
+
+          __WEBPACK_IMPORTED_MODULE_5_axios___default.a.post('http://localhost:8181/api/person', obj).then( (response) => {
+            console.log(response)
+          }).catch((err) => {
+            console.log(`err : ${err}`)
+          })
     
             __WEBPACK_IMPORTED_MODULE_4_toastr___default.a.success('Su mensaje ha sido enviado' );
         },
