@@ -3,6 +3,7 @@ import '../googlec54e055a9da49684.html'
 import '../404.html'
 import 'jquery-validation'
 import Toastr from 'toastr'
+import axios from 'axios'
 
 $(function() {
      

@@ -10339,6 +10339,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_jquery_validation___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_jquery_validation__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_toastr__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_toastr__);
+throw new Error("Cannot find module \"axios\"");
+
 
 
 
@@ -10383,7 +10385,15 @@ $(function() {
             }
         },
         submitHandler: function(form) {
+           var form = $(form).serializeArray()
+           var obj = [];
 
+           $.each(form, function(i, val){
+                obj.push(val.value)
+           });
+            //objeto que enviamos 
+          console.log(obj)
+    
             __WEBPACK_IMPORTED_MODULE_4_toastr___default.a.success('Su mensaje ha sido enviado' );
         },
         invalidHandler: function(event, validator){
@@ -10434,8 +10444,6 @@ $(function() {
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
             var idSection = target[0].id; 
-
-            var that = $(this);
 
             if (target.length) {
 
