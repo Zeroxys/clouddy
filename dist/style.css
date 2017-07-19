@@ -691,6 +691,16 @@ nav.nav-menu ul li a.active-item:after {
 #portfolio .max-container .content h3 {
   color: #2c6ef0;
 }
+#portfolio .max-container .content .content-colum {
+  text-align: center;
+  margin-top: 40px;
+}
+#portfolio .max-container .content .content-colum .content-clientes .cliente {
+  list-style: none;
+}
+#portfolio .max-container .content .content-colum .content-clientes .cliente a img {
+  width: 240px;
+}
 #contact {
   position: relative;
   z-index: 1;
