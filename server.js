@@ -3,7 +3,7 @@ const compression = require('compression')
 const errorHandler = require('express-error-handler')
 const bodyParser = require('body-parser')
 const serveStatic = require('serve-static')
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 3000
 const app = new express()
 
 // set our enviroment
@@ -14,7 +14,16 @@ app.use(bodyParser.json())
 app.use(compression())
 
 // set routes
-app.post('/form', (req, res, next) => {
+
+app.get('/', (req, res, next) => {
+  res.status(200).sendFile(__dirname + '/dist/index.html')
+})
+
+app.get('/*', (req, res, next) => {
+  res.status(404).sendFile(__dirname + '/dist/404.html')
+})
+
+app.post('/api/person', (req, res, next) => {
   console.log(`its ok : ${req.body}`)
 })
 
