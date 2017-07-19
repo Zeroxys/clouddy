@@ -19,36 +19,6 @@ $(function() {
   var validator = $("#form").submit(function(e) {
     e.preventDefault()
   }).validate({
-    // errorClass:'invalid',
-
-    // rules: {
-    //   name: {
-    //     required: true
-    //   },
-
-    //   email: {
-    //     required: true,
-    //     email: true
-    //   },
-
-    //   context:{
-    //     required: true,
-    //     minlength: 80
-    //   }
-    // },
-
-    // messages:{
-    //   name: 'Su nombre completo',
-    //   email: {
-    //     required: 'Es requerido su correo',
-    //     email: 'No es un correo válido',
-    //   },
-
-    //   context:{
-    //     required: 'Es necesario que nos describas tu proyecto',
-    //     minlength: 'Mínimo de 80 caracteres' 
-    //   }
-    // },
 
     submitHandler: function(form) {
 
@@ -57,7 +27,6 @@ $(function() {
         email : 'user@mail.com',
         text : 'bla bla bla'
       })
-      // Toastr.success('Su mensaje ha sido enviado' );
     },
 
     invalidHandler: function(event, validator){
@@ -100,9 +69,100 @@ $(function() {
     }
   });
 
+<<<<<<< HEAD
   //get event click link
   $('a[href*=\\#]:not([href=\\#])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+=======
+   var validator = $("#form").validate({
+       errorClass:'invalid',
+        rules: {
+            name: {
+            required: true
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            context:{
+                required: true,
+                minlength: 80
+            }
+        },
+        messages:{
+            name: 'Su nombre completo',
+            email: {
+                required: 'Es requerido su correo',
+                email: 'No es un correo válido',
+            },
+            context:{
+                required: 'Es necesario que nos describas tu proyecto',
+                minlength: 'Mínimo de 80 caracteres' 
+            }
+        },
+        submitHandler: function(form) {
+           var form = $(form).serializeArray()
+           var obj = [];
+
+           $.each(form, function(i, val){
+                obj.push(val.value)
+           });
+            //objeto que enviamos 
+          console.log(obj)
+    
+            Toastr.success('Su mensaje ha sido enviado' );
+        },
+        invalidHandler: function(event, validator){
+            var errors  = validator.errorList
+            if(errors.length <= 2){
+                $.each( errors, function( key, value ) {
+                    Toastr.error(value.message);  
+                });
+            }else if(errors.length == 3){
+                Toastr.error('Es necesario que llene el formulario' );  
+            }
+        },
+        showErrors: function(errorMap, errorList) {  
+            return true;   
+        }
+    });
+
+
+   
+
+    var alto = $( window ).height();
+    var nvMovil = $('.nav-movil');
+    var contHeader = $('container-header');
+
+
+    //show menu movil
+    $('#menu-toggle-wrapper').click(function(){
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $('body').css('overflow','hidden')
+            $('#head-logo').css('color','white')
+            nvMovil.css({
+                'height': alto,
+                'display': 'block'
+            })
+        }else{
+            $('body').css('overflow','auto')
+            $('#head-logo').css('color','#2c6ef0')
+            $('.nav-movil').css('display', 'none')
+        }
+    });
+
+    //get event click link
+    $('a[href*=\\#]:not([href=\\#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+            var idSection = target[0].id; 
+
+            if (target.length) {
+>>>>>>> f77baaa9c37174f7c1ef2519a8ef982647b3b5be
 
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
