@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --watch",
-    "prod": "webpack -p --watch",
+    "prod": "webpack -p",
     "start": "node server"
   },
   "keywords": [
