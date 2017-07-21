@@ -569,14 +569,43 @@ nav.nav-menu ul li a:hover,
 nav.nav-menu ul li a.active-item {
   color: #0022f6;
 }
-nav.nav-menu ul li a:hover:after,
 nav.nav-menu ul li a.active-item:after {
   position: absolute;
   content: '';
-  border: 1px solid #0022f6;
-  width: 60%;
+  height: 2px;
+  width: 100%;
   bottom: -4px;
-  left: 20%;
+  background-color: #0022f6;
+}
+nav.nav-menu ul li a:after,
+nav.nav-menu ul li a:before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  background-color: #0022f6;
+}
+nav.nav-menu ul li a:before {
+  left: 0;
+}
+nav.nav-menu ul li a:after {
+  right: 0;
+  background-color: #fff;
+  -webkit-transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+nav.nav-menu ul li a:hover:before {
+  background-color: #fff;
+  width: 100%;
+  -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+nav.nav-menu ul li a:hover:after {
+  background: transparent;
+  width: 100%;
+  -webkit-transition: 0s;
+  transition: 0s;
 }
 .container-header {
   position: absolute;
