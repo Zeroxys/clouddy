@@ -2,6 +2,8 @@
 @import "variables.styl"
 @import "menu.styl"
 @import "404.styl"
+@import "social"
+@import '../../node_modules/font-awesome/css/font-awesome.css'
 @import '../../node_modules/toastr/build/toastr.css'
 @import 'toastr.styl'
 
@@ -131,13 +133,34 @@ nav.nav-menu
 				position: relative
 				&:hover, &.active-item 
 					color: blueHoverLink
-				&:hover:after, &.active-item:after 
+				&.active-item:after 
+					position: absolute
+					content: ''
+					height: 2px
+					width: 100%
+					bottom: -4px
+					background-color: blueHoverLink
+				&:after, &:before
 					position: absolute
 					content: '';
-					border: 1px solid blueHoverLink
-					width: 60%
+					width: 0%
+					height: 2px
 					bottom: -4px
-					left: 20%
+					background-color: blueHoverLink
+				&:before
+					left: 0
+				&:after
+					right: 0
+					background-color: white
+					transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1)
+				&:hover:before
+					background-color: white
+					width: 100%
+					transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1)
+				&:hover:after
+					background: transparent 
+					width: 100%
+					transition: 0s
 				 
 .container-header
 	position: absolute
@@ -268,6 +291,7 @@ nav.nav-menu
 					outline: none
 					overflow: hidden
 				input[type = "submit"]
+					margin-top: 40px
 					cursor: pointer
 					background: white
 					box-shadow:  0 2px 40px 0 rgba(255,255,255,0.73);
