@@ -189,20 +189,3 @@ $(function() {
 
 
 });
-
-
-/*
-function(){
-    // agregar lo del cambio de menú
-
-    var idSection = target.attr('id') // id del section o contendedor
-    var lnk = that // link donde se hace click
-
-    '#'+idSection?lnk.attr('href'):lnk.addClass('active-item').siblings().removeClass('active-item')
-
-
-    return false;
-}
-
-
-*/

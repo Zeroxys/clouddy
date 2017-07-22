@@ -783,6 +783,7 @@ nav.nav-menu ul li a:hover:after {
   overflow: hidden;
 }
 #contact .max-container .content form input[type = "submit"] {
+  margin-top: 40px;
   cursor: pointer;
   background: #fff;
   -webkit-box-shadow: 0 2px 40px 0 rgba(255,255,255,0.73);
