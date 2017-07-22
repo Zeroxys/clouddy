@@ -42,24 +42,33 @@ $(function() {
                 minlength: 'Mínimo de 80 caracteres' 
             }
         },
+
         submitHandler: function(form) {
            var form = $(form).serializeArray()
            var obj = [];
+          let obj2 = {}
 
-           $.each(form, function(i, val){
+          $.each(form, function(i, val){
                 obj.push(val.value)
-           });
-            //objeto que enviamos 
-        //   console.log(obj)
+          });
 
-        //   axios.post('http://localhost:8181/api/person', obj).then( (response) => {
-        //     console.log(response)
-        //   }).catch((err) => {
-        //     console.log(`err : ${err}`)
-        //   })
-    
-            Toastr.success('Su mensaje ha sido enviado' );
+            //objeto que enviamos 
+          console.log(obj)
+          obj2 = {
+              name : obj[0],
+              email : obj[1],
+              description : obj[2]
+          }
+          
+          axios.post('http://localhost:8181/api/person', obj2).then( (response) => {
+            Toastr.success(`chido ${response}`);
+            console.log(response)
+          }).catch((err) => {
+            return Toastr.error(value.message);
+            console.log(`err : ${err}`)
+          })
         },
+
         invalidHandler: function(event, validator){
             var errors  = validator.errorList
             if(errors.length <= 2){
@@ -70,6 +79,7 @@ $(function() {
                 Toastr.error('Es necesario que llene el formulario' );  
             }
         },
+
         showErrors: function(errorMap, errorList) {  
             return true;   
         }

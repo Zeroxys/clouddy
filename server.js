@@ -23,10 +23,6 @@ app.get('/*', (req, res, next) => {
   res.status(404).sendFile(__dirname + '/dist/404.html')
 })
 
-app.post('/api/person', (req, res, next) => {
-  console.log(`its ok : ${req.body}`)
-})
-
 app.listen(port, err => {
   if (err) {
     console.log(`Error happened :${err}`)
