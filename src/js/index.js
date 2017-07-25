@@ -46,26 +46,24 @@ $(function() {
         submitHandler: function(form) {
            var form = $(form).serializeArray()
            var obj = [];
-          let obj2 = {}
+           var datos = {};
 
           $.each(form, function(i, val){
                 obj.push(val.value)
           });
 
-            //objeto que enviamos 
-          console.log(obj)
-          obj2 = {
+          datos = {
               name : obj[0],
               email : obj[1],
               description : obj[2]
           }
           
-          axios.post('http://localhost:8181/api/person', obj2).then( (response) => {
-            Toastr.success(`chido ${response}`);
+          axios.post('http://localhost:8181/api/person', datos).then( function(response) {
+            Toastr.success('chido ' +  response);
             console.log(response)
-          }).catch((err) => {
+          }).catch( function (err) {
             return Toastr.error(value.message);
-            console.log(`err : ${err}`)
+            // console.log(`err : ${err}`)
           })
         },
 
