@@ -61,7 +61,7 @@ $(function(e) {
           //form.reset()
           axios.post('http://localhost:5001/api/person', datos).then( function(response) {
             Toastr.success('chido ' +  response);
-            console.log(response)
+            console.log(response)   
           }).catch( function (err) {
             console.log(`err : ${err}`)
             return Toastr.error(value.message);
