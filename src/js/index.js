@@ -59,8 +59,8 @@ $(function(e) {
           }
 
           //form.reset()
-          axios.post('http://localhost:5001/api/person', datos).then( function(response) {
-            Toastr.success('chido ' +  response);
+          axios.post('https://159.65.162.1:5001/api/person', datos).then( function(response) {
+            Toastr.success('Tu mensaje ha sido enviado');
             console.log(response)   
           }).catch( function (err) {
             console.log(`err : ${err}`)
