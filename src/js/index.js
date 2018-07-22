@@ -5,8 +5,7 @@ import 'jquery-validation'
 import Toastr from 'toastr'
 import axios from 'axios'
 
-$(function() {
-     
+$(function(e) {
     Toastr.options = {
         'hideDuration'  : 1000,
         'closeDuration' : 1000,
@@ -45,6 +44,7 @@ $(function() {
 
         submitHandler: function(form) {
            var form = $(form).serializeArray()
+           console.log(form)
            var obj = [];
            var datos = {};
 
@@ -57,13 +57,14 @@ $(function() {
               email : obj[1],
               description : obj[2]
           }
-          
-          axios.post('https://api.clouddy.com.mx:5001/api/person', datos).then( function(response) {
+
+          //form.reset()
+          axios.post('http://localhost:8181/api/person', datos).then( function(response) {
             Toastr.success('chido ' +  response);
             console.log(response)
           }).catch( function (err) {
+            console.log(`err : ${err}`)
             return Toastr.error(value.message);
-            // console.log(`err : ${err}`)
           })
         },
 
