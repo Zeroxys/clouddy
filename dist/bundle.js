@@ -11080,9 +11080,9 @@ $(function(e) {
           }
 
           //form.reset()
-          __WEBPACK_IMPORTED_MODULE_5_axios___default.a.post('http://localhost:8181/api/person', datos).then( function(response) {
+          __WEBPACK_IMPORTED_MODULE_5_axios___default.a.post('http://localhost:5001/api/person', datos).then( function(response) {
             __WEBPACK_IMPORTED_MODULE_4_toastr___default.a.success('chido ' +  response);
-            console.log(response)
+            console.log(response)   
           }).catch( function (err) {
             console.log(`err : ${err}`)
             return __WEBPACK_IMPORTED_MODULE_4_toastr___default.a.error(value.message);
