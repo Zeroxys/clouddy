@@ -3,7 +3,7 @@ const compression = require('compression')
 const errorHandler = require('express-error-handler')
 const bodyParser = require('body-parser')
 const serveStatic = require('serve-static')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 const app = new express()
 
 // set our enviroment
