@@ -59,7 +59,7 @@ $(function(e) {
           }
 
           //form.reset()
-          axios.post('http://clouddy.com.mx/api/person', datos).then( function(response) {
+          axios.post('https://miguelzavala.tech/api/person', datos).then( function(response) {
             Toastr.success('Tu mensaje ha sido enviado');
             console.log(response)   
           }).catch( function (err) {

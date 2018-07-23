@@ -11155,7 +11155,7 @@ $(function(e) {
           }
 
           //form.reset()
-          __WEBPACK_IMPORTED_MODULE_5_axios_jsonp_pro___default.a.post('http://clouddy.com.mx/api/person', datos).then( function(response) {
+          __WEBPACK_IMPORTED_MODULE_5_axios_jsonp_pro___default.a.post('https://miguelzavala.tech/api/person', datos).then( function(response) {
             __WEBPACK_IMPORTED_MODULE_4_toastr___default.a.success('Tu mensaje ha sido enviado');
             console.log(response)   
           }).catch( function (err) {
