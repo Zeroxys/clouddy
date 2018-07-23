@@ -59,11 +59,11 @@ $(function(e) {
           }
 
           //form.reset()
-          axios.post('https://miguelzavala.tech/api/person', datos).then( function(response) {
+          axios.post('https://urbanica.site/api/person', datos).then( function(response) {
             Toastr.success('Tu mensaje ha sido enviado');
-            console.log(response)   
+            //console.log(response)   
           }).catch( function (err) {
-            console.log(`err : ${err}`)
+            //console.log(`err : ${err}`)
             return Toastr.error(value.message);
           })
         },
